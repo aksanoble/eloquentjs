@@ -1,24 +1,22 @@
 function every(array, isNaN) {
-  var p = true;
   for (var i = 0; i< array.length; i++) {
     if (!isNaN(array[i])) {
       return false;
     }
 
   }
-  return p;
+  return true;
 }
 
 
 function some(array, isNaN) {
-  var p = false;
-  for (var i = 0; i< array.length; i++) {
+ for (var i = 0; i< array.length; i++) {
     if (isNaN(array[i])) {
       return true;
     }
 
   }
-  return p;
+  return false;
 }
 console.log(every([NaN, NaN, NaN], isNaN));
 // → true
