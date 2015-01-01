@@ -19,8 +19,7 @@ Object.defineProperty(Vector.prototype, "length", {
     get: function() {
         return Math.sqrt(this.x*this.x + this.y*this.y);
     },
-  enumerable: true
-    });
+});
 
 console.log(new Vector(1, 2).plus(new Vector(2, 3)));
 // → Vector{x: 3, y: 5}
