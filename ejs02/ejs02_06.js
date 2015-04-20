@@ -17,8 +17,3 @@ for (var i=1; i<size+1; i++){
 
 }
 console.log(string);
-
-var makeNoise = function() {
-console.log("Pling!");
-}
-console.log(makeNoise());
